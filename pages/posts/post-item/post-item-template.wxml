@@ -1,0 +1,21 @@
+<template name="postItem">
+  <!-- 列表 -->
+  <view class='post-container'>
+    <!-- 头像 时间-->
+    <view class='post-author-data'>
+      <image class='post-author' src='{{avatar}}'></image>
+      <text class='post-data'>{{data}}</text>
+    </view>
+    <!-- 标题 图片 文本 -->
+    <text class='post-title'>{{title}}</text>
+    <image class='post-image' src='{{imgSrc}}'></image>
+    <text class='post-content'>{{content}}</text>
+    <!-- 收藏 留言 -->
+    <view class='post-like'>
+      <image class='post-like-image' src='../../assets/img/icon/view.png'></image>
+      <text class='post-like-font'>{{reading}}</text>
+      <image class='post-like-image' src='../../assets/img/icon/chat.png'></image>
+      <text class='post-like-font'>{{collection}}</text>
+    </view>
+  </view>
+</template>

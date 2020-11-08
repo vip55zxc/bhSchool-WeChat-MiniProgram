@@ -1,0 +1,19 @@
+/**app.wxss**/
+@import "weui.wxss";
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  /* padding: 200rpx 0; */
+  padding-top: 100rpx;
+  box-sizing: border-box;
+  background-color: #f8f8f8;
+}
+ /*全局背景颜色  */
+page{
+  background-color: #f8f8f8;
+  font-family: "苹方-简";
+}
+

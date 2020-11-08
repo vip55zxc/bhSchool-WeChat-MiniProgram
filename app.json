@@ -1,0 +1,37 @@
+{
+  "pages": [
+    "pages/loading/loading",
+    "pages/index/index",
+    "pages/shop/shop",
+    "pages/feedback/feedback",
+    "pages/shop/shop-detail/shop-detail",
+    "pages/logs/logs",
+    "pages/smoke/smoke"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "渤海小院",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#000000",
+    "borderStyle": "white",
+    "selectedColor": "#62b900",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "公告"
+      },
+      {
+        "pagePath": "pages/shop/shop",
+        "text": "店铺"
+      },
+      {
+        "pagePath": "pages/feedback/feedback",
+        "text": "反馈"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json"
+}

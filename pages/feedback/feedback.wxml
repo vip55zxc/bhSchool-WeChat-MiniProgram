@@ -1,0 +1,29 @@
+<!--pages/feedback/feedback.wxml-->
+<view class="page">
+  <view class='container'>
+    <view class="page__hd"></view>
+    <!--页头-->
+    <view class='box'>
+      <text class='feedback-title'>「反馈」</text>
+      <view class='allnr'>
+        <view class='nr'>
+          <text>你有建议的话,本猿可以听听</text>
+        </view>
+        <view class='nr'>
+          <text>o(=•ェ•=)m</text>
+        </view>
+      </view>
+      <view class='btn-title'>
+        <text class='p'>准备好你的措辞，并带上要送给我的小鱼干，然后点下按钮....come on！</text>
+      </view>
+      <!-- 分割线 -->
+      <view class='fg'></view>
+      <view class="page__bd">
+        <!--主体-->
+        <button class="weui-btn" open-type="contact" type="primary" style='background:linear-gradient(to right, #f6cb78 , #ed71c6);'>点我！跟客服小哥侃大山</button>
+      </view>
+      
+    </view>
+  </view>
+  <image class='banner-image' src='../../assets/img/banner-bg.svg'></image>
+</view>

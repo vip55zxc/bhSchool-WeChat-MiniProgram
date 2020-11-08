@@ -1,0 +1,37 @@
+.box{
+  width: 85%;
+  font-size: 28rpx;
+  color: #333;
+}
+
+.title{
+  font-size: 40rpx;
+}
+
+.nr{
+  line-height: 2
+}
+
+.notice-border{
+  border-left: 15rpx solid #e0e0e0;
+  padding: 28rpx;
+  background-color: #f0f0f0;
+  margin-bottom: 30rpx;
+  margin-top: 30rpx;
+}
+
+.content{
+  padding: 10rpx;
+  border-left: 2rpx solid #e0e0e0;
+  border-right: 2rpx solid #e0e0e0;
+  border-bottom: 2rpx solid #e0e0e0;
+}
+
+.content-title{
+  padding: 17rpx;
+  background-color: #f0f0f0;
+  border: 2rpx solid #e0e0e0;
+
+}
+
+

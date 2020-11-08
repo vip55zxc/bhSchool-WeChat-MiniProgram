@@ -1,0 +1,29 @@
+<view class="page">
+  <view class="page__hd">
+    <view class="page__title">「学院用餐指南」</view>
+    <view class='text'>
+      <view class="page__desc">收录了校园内外的一些吃喝菜单</view>
+      <view class="page__desc">请遵守学校规定</view>
+      <view class="page__desc">用餐愉快！</view>
+    </view>
+  </view>
+  <view class="page__bd page__bd_spacing">
+    <view class="kind-list">
+      <block wx:for="{{list}}" wx:key="_id" >
+        <view class="kind-list__item">
+          <view bindtap="kindToggle" id="{{item._id}}" class="weui-flex kind-list__item-hd {{item.open ? 'kind-list__item-hd_show' : ''}}" >
+            <view class="weui-flex__item">{{item.name}}</view>
+          </view>
+          <view class="kind-list__item-bd {{item.open ? 'kind-list__item-bd_show' : ''}}">
+            <view class="weui-cells {{item.open ? 'weui-cells_show' : ''}}">
+              <view class="weui-cell weui-cell_access">
+                <view class="weui-cell__bd" data-phone='{{item.phone}}' catchtap="onCallTap">{{item.phone}}</view>
+                <navigator url="./../../pages/shop/shop-detail/shop-detail?shopId={{item._id}}&shopName={{item.name}}&address={{item.address}}" class="weui-cell__ft weui-cell__ft_in-access">进入店铺</navigator>
+              </view>
+            </view>
+          </view>
+        </view>
+      </block>
+    </view>
+  </view>
+</view>

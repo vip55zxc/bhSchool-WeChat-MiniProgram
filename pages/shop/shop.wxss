@@ -1,0 +1,89 @@
+@import './../../assets/css/weui.wxss';
+
+.page {
+  padding-left: 20px;
+  padding-right: 20px;
+  font-size: 28rpx;
+  color: #333;
+  font-family: "苹方-简";
+}
+
+.page__title {
+  font-size: 40rpx;
+  margin-left: 35rpx;
+  padding-top: 100rpx;
+}
+
+.text {
+  color: #888;
+  margin-top: 30rpx;
+  margin-bottom: 40rpx;
+  margin-left: 35rpx;
+}
+
+.page__desc{
+  padding-bottom: 4rpx;
+  padding-top: 4rpx;
+}
+
+.weui-flex {
+  align-items: center;
+}
+
+.weui-cells {
+  margin-top: 0;
+  opacity: 0;
+  transform: translateY(-50%);
+  transition: 0.3s;
+}
+
+.weui-cells:before, :after {
+  display: none;
+}
+
+.weui-cells_show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.weui-cell:before {
+  right: 15px;
+}
+
+.weui-flex__item{
+  margin-left: 20rpx;
+}
+
+.kind-list__item {
+  margin: 5px 0;
+  background-color: #fff;
+  border-radius: 2px;
+  overflow: hidden;
+}
+
+.kind-list__item:first-child {
+  margin-top: 0;
+}
+
+.kind-list__img {
+  width: 30px;
+  height: 30px;
+}
+
+.kind-list__item-hd {
+  padding: 8px;
+  transition: opacity 0.3s;
+}
+
+.kind-list__item-hd_show {
+  opacity: 0.4;
+}
+
+.kind-list__item-bd {
+  height: 0;
+  overflow: hidden;
+}
+
+.kind-list__item-bd_show {
+  height: auto;
+}

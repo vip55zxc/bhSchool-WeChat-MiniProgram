@@ -1,0 +1,21 @@
+<!--index.wxml-->
+<view class="container">
+  <view class='box'>
+    <text class='title'>「公告」</text>
+    <view class='notice-border'>
+      <text>毕业之前，本猿愿意持续更新！</text>
+    </view>
+    <view>
+      <view class='nr' wx:if="list.length>0">
+        <view class='content-title'>
+          <text>版本功能如下：</text>
+        </view>
+        <block wx:for="{{list}}" wx:for-index="id" wx:for-item="item">
+          <view class='content'>
+            <text class='p'>{{id+1}}.{{item.content}} </text>
+          </view>
+        </block>
+      </view>
+    </view>
+  </view>
+</view>

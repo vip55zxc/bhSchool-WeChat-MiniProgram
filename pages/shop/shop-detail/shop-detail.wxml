@@ -1,0 +1,41 @@
+<view class="page">
+  <view class="page__hd">
+    <view class="page__title">「{{name}}」</view>
+    <view class='text'>
+      <view class="page__desc">地址：{{address}}</view>
+    </view>
+  </view>
+  <block wx:for="{{list}}" wx:for-item="item">
+    <view class='content'>
+      <view class='content-title'>
+        {{item.name}}
+      </view>
+
+      <view class='shop-content'>
+
+        <view class='shop-'>
+          <block wx:for="{{item.goodsList}}" wx:for-item="i">
+            <text class='text-shop1'>{{i.name}}</text>
+            <view style="clear:both;height:0"></view>
+            <view class='fgx'></view>
+          </block>
+        </view>
+
+
+        <view class='shop-'>
+          <block wx:for="{{item.goodsList}}" wx:for-item="i">
+            <view style='text-algin:right'>
+              <text class='text-shop'>{{i.price}}</text>
+               <view style="clear:both;height:0"></view>
+            </view>
+            <view class='fgx'></view>
+
+          </block>
+        </view>
+        <view style="clear:both;height:0"></view>
+
+      </view>
+
+    </view>
+  </block>
+</view>
